@@ -6,6 +6,9 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
@@ -22,3 +25,77 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datasets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in Sierra Leone.
+
+## Installation
+The `sierraleone` packages is not yet released on [CRAN](https://cran.r-project.org). The development version of the package can be installed from [GitHub](https://github.com/spatialworks/sierraleone) with:
+
+```{r install, echo = TRUE, eval = TRUE}
+if(!require(remotes)) install.packages("remotes")
+remotes::install_github("spatialworks/sierraleone")
+```
+
+## Usage
+When installing `sierraleone`, geospatial packages on which `sierraleone` depends on are installed. To use `sierraleone` package, it will be important to load these package dependencies that have been installed. This can be done by:
+
+```{r usage, echo = TRUE, eval = TRUE}
+library(rgdal)
+library(rgeos)
+library(raster)
+```
+
+### Province borders
+
+The Sierra Leone province borders `SpatialPolygonsDataFrame` is accessed via the `province` dataset.
+
+```{r province, echo = TRUE, eval = TRUE}
+sierraleone::province
+```
+
+The province borders of Sierra Leone can be plotted by:
+
+```{r provincePlot, echo = TRUE, eval = TRUE}
+sp::plot(sierraleone::province)
+```
+
+### District borders
+
+The Sierra Leone district borders `SpatialPolygonsDataFrame` is accessed via the `district` dataset.
+
+```{r district, echo = TRUE, eval = TRUE}
+sierraleone::district
+```
+
+The district borders of Sierra Leone can be plotted by:
+
+```{r districtPlot, echo = TRUE, eval = TRUE}
+sp::plot(sierraleone::district)
+```
+
+### Chiefdom borders
+
+The Sierra Leone chiefdom borders `SpatialPolygonsDataFrame` is accessed via the `chiefdom` dataset.
+
+```{r chiefdom, echo = TRUE, eval = TRUE}
+sierraleone::chiefdom
+```
+
+The chiefdom borders of Sierra Leone can be plotted by:
+
+```{r chiefdomPlot, echo = TRUE, eval = TRUE}
+sp::plot(sierraleone::chiefdom)
+```
+
+### County borders
+
+The Sierra Leone county borders `SpatialPolygonsDataFrame` is accessed via the `county` dataset.
+
+```{r county, echo = TRUE, eval = TRUE}
+sierraleone::county
+```
+
+The county borders of Sierra Leone can be plotted by:
+
+```{r countyPlot, echo = TRUE, eval = TRUE}
+sp::plot(sierraleone::county)
+```
+
