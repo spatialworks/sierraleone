@@ -76,7 +76,8 @@
   <div class="contents col-md-9">
 <div id="sierraleone-datasets-for-use-in-designing-surveys-in-sierra-leone" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#sierraleone-datasets-for-use-in-designing-surveys-in-sierra-leone" class="anchor"></a>sierraleone: Datasets for use in designing surveys in Sierra Leone</h1></div>
+<a href="#sierraleone-datasets-for-use-in-designing-surveys-in-sierra-leone" class="anchor"></a>sierraleone: Datasets for use in designing surveys in Sierra Leone <img src="https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SL-flag.gif" width="200px" align="right">
+</h1></div>
 <!-- badges: start -->
 
 <p>Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datasets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in Sierra Leone.</p>
@@ -98,7 +99,7 @@
 <h3 class="hasAnchor">
 <a href="#province-borders" class="anchor"></a>Province borders</h3>
 <p>The Sierra Leone province borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>province</code> dataset.</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">province</span>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/province.html">province</a></span>
 <span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
 <span class="co">#&gt; features    : 4 </span>
 <span class="co">#&gt; extent      : -13.30901, -10.27056, 6.923379, 9.999253  (xmin, xmax, ymin, ymax)</span>
@@ -108,14 +109,14 @@
 <span class="co">#&gt; min values  :        1,    Eastern,       SL01,    Eastern,         NA,         NA, Sierra Leone,         SL, 2016/08/01, 2016/10/17,      NA, 1.8390606275, 0.0563871543411 </span>
 <span class="co">#&gt; max values  :        4,    Western,       SL04,    Western,         NA,         NA, Sierra Leone,         SL, 2016/08/01, 2016/10/17,      NA, 12.645889079,   2.96657963229</span></pre></div>
 <p>The province borders of Sierra Leone can be plotted by:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">province</span>)</pre></div>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/province.html">province</a></span>)</pre></div>
 <p><img src="reference/figures/README-provincePlot-1.png" width="100%"></p>
 </div>
 <div id="district-borders" class="section level3">
 <h3 class="hasAnchor">
 <a href="#district-borders" class="anchor"></a>District borders</h3>
 <p>The Sierra Leone district borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>district</code> dataset.</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">district</span>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/district.html">district</a></span>
 <span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
 <span class="co">#&gt; features    : 14 </span>
 <span class="co">#&gt; extent      : -13.30901, -10.27056, 6.923379, 9.999253  (xmin, xmax, ymin, ymax)</span>
@@ -125,14 +126,14 @@
 <span class="co">#&gt; min values  :        1,                 Bo,     SL0101,                 Bo,         NA,         NA,    Eastern,       SL01, Sierra Leone,         SL, 2016/08/01, 2016/10/17,      NA, 0.738326560804, 0.00606880539992 </span>
 <span class="co">#&gt; max values  :        9, Western Area Urban,     SL0402, Western Area Urban,         NA,         NA,    Western,       SL04, Sierra Leone,         SL, 2016/08/01, 2016/10/17,      NA,  6.84446934587,    1.01774343267</span></pre></div>
 <p>The district borders of Sierra Leone can be plotted by:</p>
-<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">district</span>)</pre></div>
+<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/district.html">district</a></span>)</pre></div>
 <p><img src="reference/figures/README-districtPlot-1.png" width="100%"></p>
 </div>
 <div id="chiefdom-borders" class="section level3">
 <h3 class="hasAnchor">
 <a href="#chiefdom-borders" class="anchor"></a>Chiefdom borders</h3>
 <p>The Sierra Leone chiefdom borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>chiefdom</code> dataset.</p>
-<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">chiefdom</span>
+<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/chiefdom.html">chiefdom</a></span>
 <span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
 <span class="co">#&gt; features    : 167 </span>
 <span class="co">#&gt; extent      : -13.30901, -10.27056, 6.923379, 9.999253  (xmin, xmax, ymin, ymax)</span>
@@ -142,14 +143,14 @@
 <span class="co">#&gt; min values  :        1,     Badjia,   SL010101,     Badjia,                 Bo,     SL0101,    Eastern,       SL01, Sierra Leone,         SL, 2016/08/01, 2016/10/17,      NA, 0.0487843097851, 6.51303509621e-05, ... </span>
 <span class="co">#&gt; max values  :       99, York Rural,   SL040208, York Rural, Western Area Urban,     SL0402,    Western,       SL04, Sierra Leone,         SL, 2016/08/01, 2016/10/17,      NA,   2.76373793498,    0.202641459488, ...</span></pre></div>
 <p>The chiefdom borders of Sierra Leone can be plotted by:</p>
-<div class="sourceCode" id="cb8"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">chiefdom</span>)</pre></div>
+<div class="sourceCode" id="cb8"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/chiefdom.html">chiefdom</a></span>)</pre></div>
 <p><img src="reference/figures/README-chiefdomPlot-1.png" width="100%"></p>
 </div>
 <div id="county-borders" class="section level3">
 <h3 class="hasAnchor">
 <a href="#county-borders" class="anchor"></a>County borders</h3>
 <p>The Sierra Leone county borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>county</code> dataset.</p>
-<div class="sourceCode" id="cb9"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">county</span>
+<div class="sourceCode" id="cb9"><pre class="r"><span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/county.html">county</a></span>
 <span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
 <span class="co">#&gt; features    : 1316 </span>
 <span class="co">#&gt; extent      : -13.30901, -10.27056, 6.923379, 9.999253  (xmin, xmax, ymin, ymax)</span>
@@ -159,7 +160,7 @@
 <span class="co">#&gt; min values  :        1,   Aberdeen, SL01010101,   Aberdeen,         NA,         NA,     Badjia,   SL010101,                 Bo,     SL0101,    Eastern,       SL01, Sierra Leone,         SL, 2016/08/01, ... </span>
 <span class="co">#&gt; max values  :      999,     Zone 7, SL04020810,     Zone 7,         NA,         NA, York Rural,   SL040208, Western Area Urban,     SL0402,    Western,       SL04, Sierra Leone,         SL, 2016/08/01, ...</span></pre></div>
 <p>The county borders of Sierra Leone can be plotted by:</p>
-<div class="sourceCode" id="cb10"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no">county</span>)</pre></div>
+<div class="sourceCode" id="cb10"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">sierraleone</span><span class="kw ns">::</span><span class="no"><a href="reference/county.html">county</a></span>)</pre></div>
 <p><img src="reference/figures/README-countyPlot-1.png" width="100%"></p>
 </div>
 </div>
@@ -207,7 +208,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
