@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# sierraleone: Datasets for use in designing surveys in Sierra Leone
+# sierraleone: Datasets for use in designing surveys in Sierra Leone <img src="https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SL-flag.gif" width="200px" align="right" />
 
 <!-- badges: start -->
 
